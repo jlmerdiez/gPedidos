@@ -26,24 +26,37 @@ function Pedido(fechaPedido,
 	this.getFechaPedido = function () {
 		return this.fechaPedido;
 	};
+	// Método para poder cambiar la fecha del pedido
+	this.setFechaPedido = function (fechaPedido) {
+		this.fechaPedido = fechaPedido;
+	};
 	// Método para conocer el total de artículos del pedido
 	this.getTotalArticulos = function () {
 		return this.totalArticulos;
-	};	// Método para conocer el total del pedido
+	};
+	// Método para poder cambiar el total de artículos del pedido
+	this.setTotalArticulos = function (totalArticulos) {
+		this.totalArticulos = totalArticulos;
+	};
+	// Método para conocer el total del pedido
 	this.getTotalPedido = function () {
 		return this.totalPedido;
+	};
+	// Método para poder cambiar el total del pedido
+	this.setTotalPedido = function (totalPedido) {
+		this.totalPedido = totalPedido;
 	};
 	// Método para conocer la dirección de entrega del pedido
 	this.getDireccionEntrega = function () {
 		return this.direccionEntrega;
 	};
-	// Método para conocer la dirección de facturación del pedido
-	this.getDireccionFacturacion = function () {
-		return this.direccionFacturacion;
-	};
 	// Método para poder cambiar la dirección de entrega del pedido
 	this.setDireccionEntrega = function (direccionEntrega) {
 		this.direccionEntrega = direccionEntrega;
+	};
+	// Método para conocer la dirección de facturación del pedido
+	this.getDireccionFacturacion = function () {
+		return this.direccionFacturacion;
 	};
 	// Método para poder cambiar la dirección de facturación del pedido
 	this.setDireccionFacturacion = function (direccionFacturacion) {
